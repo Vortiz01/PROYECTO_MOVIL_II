@@ -1,30 +1,30 @@
 import 'package:flutter/material.dart';
 import 'package:proyecto/views/pagina_individual.dart';
 
-class CardRomance extends StatefulWidget {
+class CardAccion extends StatefulWidget {
 
-   const CardRomance({super.key,});
+   const CardAccion({super.key,});
 
   @override
-  State<CardRomance> createState() => _CardRomanceState();
+  State<CardAccion> createState() => _CardAccionState();
 }
 
-class _CardRomanceState extends State<CardRomance> {
-  List animeR1=['Kaguya-sama: Love is War',"https://drive.google.com/uc?export=view&id=1EfHBUZsVypTxx8ZK7jCDikcyuX8XtQoC",
-  '¡Todo vale en el amor y en la guerra! Dos genios. Dos cerebros. Dos corazones. Una batalla. ¡¿Quién declarará primero su amor?! Kaguya Shinomiya y Miyuki Shirogane son dos prodigios de gran inteligencia y quienes controlan el consejo de estudiantes de su prestigiosa academia. Pero claro, estar en la cima es algo que incluye una buena dosis de soledad como extra, y ambos acaban enamorándose el uno del otro. ¿El problema? Que ambos son demasiado orgullosos como para admitir que están enamorados.',
-  '8.4','24m','https://www.youtube.com/watch?v=YlmIUGgXJLE','3'];
+class _CardAccionState extends State<CardAccion> {
+  List animeA1=['Boku no Hero',"https://drive.google.com/uc?export=view&id=1Qi_mVHRE6KevwXAtWFENAkIt1ElGAPc1",
+ 'Las personas no nacen igual. El protagonista de esta historia es uno de esos casos raros que nacen sin superpoderes, pero esto no le impedirá perseguir su sueño: ser un gran héroe como el legendario All-Might. Para convertirse en el héroe que quiere ser, se apuntará a una de las academias de héroes más prestigiosas del país: Yueiko. Con la ayuda de su ídolo, All-Might, ¿podrá convertirse en un verdadero héroe?',
+  '8.18','24m','https://www.youtube.com/watch?v=lFXpmYK6SEQ','6'];
 
-   List animeR2=['Kimi ni Todoke',"https://drive.google.com/uc?export=view&id=1FHeiMII6q5_GrJclph_lG_ZbAR8Mkl_A",
-   'Sawako Kuronuma, llamada Sadako por sus compañeras por su parecido con el personaje de Ringu, siempre se ha entendido mal y teme por su apariencia. Hay rumores de que Sawako puede ver fantasmas y es una maldición para las personas. Pero cuando su ídolo, el popular muchacho Kazehaya, comienza a hablar con ella, todo cambia.Lento pero seguro, florece un dulce amor entre los dos, ya que superará cualquier circunstancia y obstáculos en el camino.',
-  '8.4','22m','https://www.youtube.com/watch?v=_gJR6gfRYEQ','2'];
+   List animeA2=['Bungou Stray Dogs',"https://drive.google.com/uc?export=view&id=1jJ0O7pvuXMI73iCjjPBJfWrHWyQGd3w2",
+   'La historia está protagonizada por una liga de figuras literarias con poderes sobrenaturales, como Ryunosuke Akutagawa, que en la vida real escribió varias novelas y en el manga tiene el poder de transformar su capa en una especie de monstruo. Él y sus compañeros escritores se dedicarán a resolver misterios como parte de la “Agencia Armada de Detectives”.',
+  '7.78','23m','https://www.youtube.com/watch?v=f9OV_KzR3SM','4'];
 
-  List animeR3=[ "ReLife",'https://drive.google.com/uc?export=view&id=1MsmDU4fuvVGrZxnDiRBWS_IuRtLZeWeW',
-  'La historia está protagonizada por Arata Kaizaki, un hombre de 27 años, soltero y desempleado al que sus padres le dejan sin apoyo financiero. Incapaz de encontrar trabajo debido a que siempre abandonó sus empleos anteriores en menos de tres meses, no sabe qué hacer. Una noche, tras estar bebiendo con un viejo amigo del instituto, Arata conoce a Ryo Yoake, un hombre que le ofrece a Arata una pastilla que lo convertirá nuevamente en un adolescente de 17 años y así poder rehacer su vida.',
-  '8.5','23m','https://www.youtube.com/watch?v=Azs6jA8vRH8','1'];
+  List animeA3=[ "Demon Slayer",'https://drive.google.com/uc?export=view&id=1EQmvpRVK69Q6ZUS0AyI75UtIetMUCmbo',
+  'Estamos en la era Taisho de Japón. Tanjiro, un joven que se gana la vida vendiendo carbón, descubre un día que su familia ha sido asesinada por un demonio. Para empeorar las cosas, su hermana menor Nezuko, la única superviviente de la masacre, ha sufrido una transformación en demonio. Destrozado por los acontecimientos Tanjiro decide convertirse en un cazador de demonios para poder devolver a su hermana a la normalidad y matar al demonio que masacró a su familia.',
+  '8.57','23m','https://www.youtube.com/watch?v=VQGCKyvzIM4','2'];
 
-  List animeR4=['Sasaki to miyano','https://drive.google.com/uc?export=view&id=1nwtYXkWnS31I-SIoQzJvC1NoD8RLnnkr',
-  'Yoshikazu Miyano es un manso estudiante de preparatoria al que le gusta leer mangas boys-love. Un día, se ve en la tesitura de detener una feroz pelea escolar, sin saber qué hacer. Antes de que todo vaya a peor, es interrumpido por el alumno de cursos superiores Shuumei Sasaki, que ocupa su lugar con valentía y salva a Miyano de su pena',
-  '8.4','23m','https://www.youtube.com/watch?v=IAmxN2ElqjQ','1'];
+  List animeA4=['Spy x Family','https://drive.google.com/uc?export=view&id=1czzfWwu6IrUEaO9JEuQ7kEJ9rWvhUvmb',
+  'La División de Inteligencia de Westalis (WISE) envía a su mejor espía, "Twilight", en una misión ultrasecreta para vigilar los movimientos de Donovan Desmond, quien dirige el Partido Nacional por la Unidad de Ostania, responsable de bombardear los esfuerzos de paz entre ambos países. Twilight adopta la identidad del psiquiatra Loid Forger y comienza a buscar miembros para su familia, pero Anya, la hija que adopta, resulta tener la capacidad para leer las mentes a los demás, mientras que su esposa, Yor, es una asesina. Todos mantendrán estos en secreto, pero comenzarán una vida juntos en la que deberán ocultarse sus identidades unos a otros. La paz del mundo está ahora en manos de esta nueva familia mientras se embarcan en una aventura repleta de sorpresas.',
+  '9.08','24m','https://www.youtube.com/watch?v=44qfOGvEWAU','2'];
 
   @override
   Widget build(BuildContext context) {
@@ -40,7 +40,7 @@ class _CardRomanceState extends State<CardRomance> {
         child: InkWell(
          onTap:(){
                 Navigator.of(context).push(
-                  MaterialPageRoute(builder: (context)=>    PaginaIndividual(nombre: animeR1[0], imagen: animeR1[1], descripcion: animeR1[2], score: animeR1[3], tiempo: animeR1[4], url: animeR1[5],temporada: animeR1[6])
+                  MaterialPageRoute(builder: (context)=>    PaginaIndividual(nombre: animeA1[0], imagen: animeA1[1], descripcion: animeA1[2], score: animeA1[3], tiempo: animeA1[4], url: animeA1[5],temporada: animeA1[6])
                   )
                 );
               },
@@ -69,7 +69,7 @@ class _CardRomanceState extends State<CardRomance> {
             Colors.black.withOpacity(0.35),
             BlendMode.multiply,
           ),
-          image:  NetworkImage(animeR1[1]),
+          image:  NetworkImage(animeA1[1]),
           fit: BoxFit.cover,
         ),
       ),
@@ -80,7 +80,7 @@ class _CardRomanceState extends State<CardRomance> {
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 5.0),
               child: Text(
-                animeR1[0],
+                animeA1[0],
                 style:const TextStyle(
                   fontSize: 19,
                 ),
@@ -110,7 +110,7 @@ class _CardRomanceState extends State<CardRomance> {
                         size: 18,
                       ),
                        const SizedBox(width: 7),
-                      Text(animeR1[3]),
+                      Text(animeA1[3]),
                     ],
                   ),
                 ),
@@ -127,7 +127,7 @@ class _CardRomanceState extends State<CardRomance> {
         child: InkWell(
          onTap:(){
                 Navigator.of(context).push(
-                  MaterialPageRoute(builder: (context)=>   PaginaIndividual(nombre: animeR2[0], imagen: animeR2[1], descripcion: animeR2[2], score: animeR2[3], tiempo: animeR2[4], url: animeR2[5],temporada: animeR1[6])
+                  MaterialPageRoute(builder: (context)=>   PaginaIndividual(nombre: animeA2[0], imagen: animeA2[1], descripcion: animeA2[2], score: animeA2[3], tiempo: animeA2[4], url: animeA2[5],temporada: animeA1[6])
                   )
                 );
               },
@@ -156,7 +156,7 @@ class _CardRomanceState extends State<CardRomance> {
             Colors.black.withOpacity(0.35),
             BlendMode.multiply,
           ),
-          image: NetworkImage(animeR2[1]),
+          image: NetworkImage(animeA2[1]),
           fit: BoxFit.cover,
         ),
       ),
@@ -167,7 +167,7 @@ class _CardRomanceState extends State<CardRomance> {
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 5.0),
               child: Text(
-               animeR2[0],
+               animeA2[0],
                 style: const TextStyle(
                   fontSize: 19,
                 ),
@@ -197,7 +197,7 @@ class _CardRomanceState extends State<CardRomance> {
                         size: 18,
                       ),
                        const SizedBox(width: 7),
-                      Text(animeR2[3]),
+                      Text(animeA2[3]),
                     ],
                   ),
                 ),
@@ -214,7 +214,7 @@ class _CardRomanceState extends State<CardRomance> {
         child: InkWell(
          onTap:(){
                 Navigator.of(context).push(
-                  MaterialPageRoute(builder: (context)=>   PaginaIndividual(nombre: animeR3[0], imagen: animeR3[1], descripcion: animeR3[2], score: animeR3[3], tiempo:animeR3[4], url: animeR3[5],temporada: animeR1[6])
+                  MaterialPageRoute(builder: (context)=>   PaginaIndividual(nombre: animeA3[0], imagen: animeA3[1], descripcion: animeA3[2], score: animeA3[3], tiempo:animeA3[4], url: animeA3[5],temporada: animeA1[6])
                   )
                 );
               },
@@ -243,7 +243,7 @@ class _CardRomanceState extends State<CardRomance> {
             Colors.black.withOpacity(0.35),
             BlendMode.multiply,
           ),
-          image:  NetworkImage(animeR3[1]),
+          image:  NetworkImage(animeA3[1]),
           fit: BoxFit.cover,
         ),
       ),
@@ -252,10 +252,10 @@ class _CardRomanceState extends State<CardRomance> {
           Align(
             alignment: Alignment.center,
             child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 5.0),
+              padding: const  EdgeInsets.symmetric(horizontal: 5.0),
               child: Text(
-                animeR3[0],
-                style:const  TextStyle(
+                animeA3[0],
+                style: const TextStyle(
                   fontSize: 19,
                 ),
                 overflow: TextOverflow.ellipsis,
@@ -279,99 +279,99 @@ class _CardRomanceState extends State<CardRomance> {
                   child: Row(
                     children: [
                        const Icon(
+                        Icons.star,
+                        color: Colors.yellow,
+                        size: 18,
+                      ),
+                      const  SizedBox(width: 7),
+                      Text(animeA3[3]),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    )
+        ]),
+        ),
+      ),
+       Card(
+        child: InkWell(
+         onTap:(){
+                Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context)=>   PaginaIndividual(nombre: animeA4[0], imagen: animeA4[1], descripcion: animeA4[2], score: animeA4[3], tiempo: animeA4[4], url: animeA4[5],temporada: animeA1[6])
+                  )
+                );
+              },
+               child: Column(children: [
+         Container(
+      margin: const EdgeInsets.symmetric(horizontal: 22, vertical: 10),
+      width: MediaQuery.of(context).size.width,
+      height: 180,
+      decoration: BoxDecoration(
+        color: Colors.black,
+        borderRadius: BorderRadius.circular(15),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.6),
+            // ignore: prefer_const_constructors
+            offset: Offset(
+              0.0,
+              10.0,
+            ),
+            blurRadius: 10.0,
+            spreadRadius: -6.0,
+          ),
+        ],
+        image: DecorationImage(
+          colorFilter: ColorFilter.mode(
+            Colors.black.withOpacity(0.35),
+            BlendMode.multiply,
+          ),
+          image:  NetworkImage(animeA4[1]),
+          fit: BoxFit.cover,
+        ),
+      ),
+      child:  Stack(
+        children: [
+         Align(
+            alignment: Alignment.center,
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 5.0),
+              child: Text(
+                animeA4[0],
+                style: const TextStyle(
+                  fontSize: 19,
+                ),
+                overflow: TextOverflow.ellipsis,
+                maxLines: 2,
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+          Align(
+            alignment: Alignment.bottomLeft,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Container(
+                  padding: const EdgeInsets.all(5),
+                  margin: const EdgeInsets.all(10),
+                  decoration: BoxDecoration(
+                    color: Colors.black.withOpacity(0.4),
+                    borderRadius: BorderRadius.circular(15),
+                  ),
+                  child: Row(
+                    children: [
+                      const Icon(
                         Icons.star,
                         color: Colors.yellow,
                         size: 18,
                       ),
                       const SizedBox(width: 7),
-                      Text(animeR3[3]),
-                    ],
-                  ),
-                ),
-              ],
-            ),
-          ),
-        ],
-      ),
-    )
-        ]),
-        ),
-      ),
-       Card(
-        child: InkWell(
-         onTap:(){
-                Navigator.of(context).push(
-                  MaterialPageRoute(builder: (context)=>   PaginaIndividual(nombre: animeR4[0], imagen: animeR4[1], descripcion: animeR4[2], score: animeR4[3], tiempo: animeR4[4], url: animeR4[5],temporada: animeR1[6])
-                  )
-                );
-              },
-               child: Column(children: [
-         Container(
-      margin: const EdgeInsets.symmetric(horizontal: 22, vertical: 10),
-      width: MediaQuery.of(context).size.width,
-      height: 180,
-      decoration: BoxDecoration(
-        color: Colors.black,
-        borderRadius: BorderRadius.circular(15),
-        boxShadow: [
-          BoxShadow(
-            color: Colors.black.withOpacity(0.6),
-            // ignore: prefer_const_constructors
-            offset: Offset(
-              0.0,
-              10.0,
-            ),
-            blurRadius: 10.0,
-            spreadRadius: -6.0,
-          ),
-        ],
-        image: DecorationImage(
-          colorFilter: ColorFilter.mode(
-            Colors.black.withOpacity(0.35),
-            BlendMode.multiply,
-          ),
-          image:  NetworkImage(animeR4[1]),
-          fit: BoxFit.cover,
-        ),
-      ),
-      child:  Stack(
-        children: [
-         Align(
-            alignment: Alignment.center,
-            child: Padding(
-              padding:const EdgeInsets.symmetric(horizontal: 5.0),
-              child: Text(
-                animeR4[0],
-                style: const TextStyle(
-                  fontSize: 19,
-                ),
-                overflow: TextOverflow.ellipsis,
-                maxLines: 2,
-                textAlign: TextAlign.center,
-              ),
-            ),
-          ),
-          Align(
-            alignment: Alignment.bottomLeft,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Container(
-                  padding: const EdgeInsets.all(5),
-                  margin: const EdgeInsets.all(10),
-                  decoration: BoxDecoration(
-                    color: Colors.black.withOpacity(0.4),
-                    borderRadius: BorderRadius.circular(15),
-                  ),
-                  child: Row(
-                    children: [
-                     const  Icon(
-                        Icons.star,
-                        color: Colors.yellow,
-                        size: 18,
-                      ),
-                       const SizedBox(width: 7),
-                      Text(animeR4[3]),
+                      Text(animeA4[3]),
                     ],
                   ),
                 ),

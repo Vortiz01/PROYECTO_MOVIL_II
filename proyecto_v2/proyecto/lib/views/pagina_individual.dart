@@ -1,14 +1,30 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class LoveWar extends StatelessWidget {
-    LoveWar({super.key});
-    final Uri _url = Uri.parse('https://www.youtube.com/watch?v=YlmIUGgXJLE');
+class PaginaIndividual extends StatelessWidget {
+  final dynamic nombre;
+  final dynamic imagen;
+  final dynamic descripcion;
+  final dynamic score;
+  final dynamic tiempo;
+  final String url;
+  final dynamic temporada;
+   const PaginaIndividual({super.key,
+    required this.nombre,
+    required this.imagen,
+    required this.descripcion,
+    required this.score,
+    required this.tiempo,
+    required this.url,
+    required this.temporada
+    });
+
   Future<void> _launchUrl() async{
-    if(!await launchUrl(_url)){
-      throw Exception('No se pudo encontrar $_url');
+    Uri url2 = Uri.parse(url);
+   if(!await launchUrl(url2)){
+      throw Exception('No se pudo encontrar $url');
     }
-  }
+}
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,12 +52,12 @@ class LoveWar extends StatelessWidget {
               ),
               Center(
                 child: Image.network(
-                  'https://drive.google.com/uc?export=view&id=1EfHBUZsVypTxx8ZK7jCDikcyuX8XtQoC',
+                  imagen,
                   width: MediaQuery.of(context).size.width / 1.2,
                 ),
               ),
               const SizedBox(
-                height: 50,
+                height: 30,
               ),
               Padding(
                 padding:const EdgeInsets.only(left: 25, right: 40),
@@ -49,60 +65,76 @@ class LoveWar extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'Kaguya-sama: Love is War',
-                        style: TextStyle(fontSize: 20,
+                        nombre,
+                        style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold,
                           color:const Color.fromARGB(255, 255, 110, 32)
                               .withOpacity(0.4),
-                          letterSpacing: 3,
+                          letterSpacing: 2,
                         ),
                       ),
+                      const SizedBox(height:5),
                        Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                    children: const[  
-                       Icon(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: <Widget>[  
+                       const Icon(
                         Icons.timer,
                         color: Color.fromARGB(255, 135, 30, 1),
                         size: 20,
                       ),
-                       SizedBox(width:7),
-                      Text('25 minutos', style: 
-                      TextStyle(
+                       const SizedBox(width:2),
+                     Text(tiempo, style: 
+                      const TextStyle(
                         fontSize: 20,
                         color: Colors.black38,
                         letterSpacing: 2
                       ),),
-                     Icon(
+                      const SizedBox(width: 7),
+                     const Icon(
                         Icons.score,
                         color: Color.fromARGB(255, 135, 30, 1),
                         size: 20,
-                      ), SizedBox(width:7),
-                      Text('8.4', style: 
-                      TextStyle(
+                      ),const  SizedBox(width:2),
+                      Text(score, style: 
+                      const TextStyle(
                         fontSize: 20,
                         color: Colors.black38,
                         letterSpacing: 2
                       ),),
+                     const SizedBox(width: 7),
+                     const Icon(
+                        Icons.camera,
+                        color: Color.fromARGB(255, 135, 30, 1),
+                        size: 20,
+                      ),const  SizedBox(width:2),
+                      Text('$temporada temporadas', style: 
+                      const TextStyle(
+                        fontSize: 20,
+                        color: Color.fromARGB(96, 10, 10, 10),
+                        letterSpacing: 2
+                      ),), 
                     ]
                     ,),
-                    const SizedBox(height: 60),
-                    Container(
+                    const SizedBox(height: 9),
+                    SizedBox(
                       width: MediaQuery.of(context).size.width,
                       child: Text(
-                        '¡Todo vale en el amor y en la guerra! Dos genios. Dos cerebros. Dos corazones. Una batalla. ¡¿Quién declarará primero su amor?! Kaguya Shinomiya y Miyuki Shirogane son dos prodigios de gran inteligencia y quienes controlan el consejo de estudiantes de su prestigiosa academia. Pero claro, estar en la cima es algo que incluye una buena dosis de soledad como extra, y ambos acaban enamorándose el uno del otro. ¿El problema? Que ambos son demasiado orgullosos como para admitir que están enamorados.',
-                        style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500, color:Colors.black87.withOpacity(0.3)),
+                      descripcion,
+                        style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500, color:Colors.black87.withOpacity(0.3)),
                       ),
                     ),
-                    const SizedBox(height: 60),
-                    Container(
+                    const SizedBox(height: 15),
+                    SizedBox(
                       width: MediaQuery.of(context).size.width,
                       child: Row(
-                        mainAxisSize: MainAxisSize.max,
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Center(
-                            child: ElevatedButton(onPressed: _launchUrl,
+                         Center(
+                           child: ElevatedButton(
+                            style: ElevatedButton.styleFrom(backgroundColor: const Color.fromARGB(146, 226, 80, 18),minimumSize: const Size(70, 60)),
+                            onPressed: _launchUrl,
                             child:
-                            Text('ver trailer',
-                            style: TextStyle(color: Colors.white.withOpacity(0.3)),),
+                            const Text('ver trailer',
+                            style:  TextStyle(color:  Color.fromARGB(255, 254, 254, 254),fontSize: 25),),
                             ),
                           ),
                         ],

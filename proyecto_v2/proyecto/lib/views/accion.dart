@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:proyecto/views/widgets/card_romance.dart';
 import 'package:proyecto/views/widgets/side_menu.dart';
 
-class Romance extends StatefulWidget {
-  const Romance({Key?key}):super(key:key);
+import 'widgets/card_accion.dart';
+
+class Accion extends StatefulWidget {
+  const Accion({Key?key}):super(key:key);
 
   @override
-  State<Romance> createState() => _RomanceState();
+  State<Accion> createState() => _AccionState();
 }
 
-class _RomanceState extends State<Romance> { 
+class _AccionState extends State<Accion> {
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,14 +19,14 @@ class _RomanceState extends State<Romance> {
             title: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: const[
-            Icon(Icons.video_camera_front),
+            Icon(Icons.shop),
             SizedBox(width:10),
             Text('Academia UA'),
             ],  
         ),
       ),
       drawer: const SideMenu(),
-      body:const  CardRomance()
+      body:const  CardAccion()
 
     );
   }
