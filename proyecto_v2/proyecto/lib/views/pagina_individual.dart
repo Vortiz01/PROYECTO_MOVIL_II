@@ -8,7 +8,7 @@ class PaginaIndividual extends StatelessWidget {
   final dynamic score;
   final dynamic tiempo;
   final String url;
-  final dynamic temporada;
+
    const PaginaIndividual({super.key,
     required this.nombre,
     required this.imagen,
@@ -16,7 +16,7 @@ class PaginaIndividual extends StatelessWidget {
     required this.score,
     required this.tiempo,
     required this.url,
-    required this.temporada
+
     });
 
   Future<void> _launchUrl() async{
@@ -100,18 +100,7 @@ class PaginaIndividual extends StatelessWidget {
                         color: Colors.black38,
                         letterSpacing: 2
                       ),),
-                     const SizedBox(width: 7),
-                     const Icon(
-                        Icons.camera,
-                        color: Color.fromARGB(255, 135, 30, 1),
-                        size: 20,
-                      ),const  SizedBox(width:2),
-                      Text('$temporada temporadas', style: 
-                      const TextStyle(
-                        fontSize: 20,
-                        color: Color.fromARGB(96, 10, 10, 10),
-                        letterSpacing: 2
-                      ),), 
+                    
                     ]
                     ,),
                     const SizedBox(height: 9),

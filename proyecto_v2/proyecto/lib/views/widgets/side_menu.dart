@@ -17,12 +17,8 @@ class SideMenu extends StatelessWidget {
               child:Center(
                 child:Image.network('https://drive.google.com/uc?export=view&id=1bcsT2BEgBAXhoY3TtwYYUTpPu6B1nbXh'))),
               ListTile(leading:const Icon(Icons.home),title:const Text('Inicio'),
-              onTap:(){
-                Navigator.of(context).push(
-                  MaterialPageRoute(builder:(context)=> HomePage()
-                  )
-                );
-              },),
+              onTap:() => Navigator.popUntil(context, ModalRoute.withName('/')),
+              ),
                ListTile(leading:const Icon(Icons.favorite),title:const Text('Romance'),
               onTap:(){
                 Navigator.of(context).push(
