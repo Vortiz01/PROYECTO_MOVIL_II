@@ -108,6 +108,7 @@ class PaginaIndividual extends StatelessWidget {
                       width: MediaQuery.of(context).size.width,
                       child: Text(
                       descripcion,
+                      textAlign: TextAlign.justify,
                         style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500, color:Colors.black87.withOpacity(0.3)),
                       ),
                     ),
@@ -119,7 +120,7 @@ class PaginaIndividual extends StatelessWidget {
                         children: [
                          Center(
                            child: ElevatedButton(
-                            style: ElevatedButton.styleFrom(backgroundColor: const Color.fromARGB(146, 226, 80, 18),minimumSize: const Size(70, 60)),
+                            style: ElevatedButton.styleFrom(backgroundColor: Color.fromRGBO(91, 18, 226, 0.573),minimumSize: const Size(70, 60)),
                             onPressed: _launchUrl,
                             child:
                             const Text('ver trailer',

@@ -14,12 +14,13 @@ class _RomanceState extends State<Romance> {
   Widget build(BuildContext context) {
     return Scaffold(
        appBar: AppBar(
+        backgroundColor: Color.fromRGBO(27 , 1, 97, 38),
             title: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: const[
-            Icon(Icons.video_camera_front),
+            Icon(Icons.menu_book_sharp),
             SizedBox(width:10),
-            Text('Academia UA'),
+            Text('Catálago de Animes'),
             ],  
         ),
       ),

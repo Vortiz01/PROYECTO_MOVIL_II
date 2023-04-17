@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:proyecto/views/accion.dart';
 import 'package:proyecto/views/home.dart';
+import 'package:proyecto/views/ciencia_ficcion.dart';
 
 import '../romance.dart';
 class SideMenu extends StatelessWidget {
@@ -26,10 +27,17 @@ class SideMenu extends StatelessWidget {
                   )
                 );
               },),
-               ListTile(leading:const Icon(Icons.account_circle),title:const Text('Accion'),
+               ListTile(leading:const Icon(Icons.paragliding),title:const Text('Accion'),
               onTap:(){
                 Navigator.of(context).push(
                   MaterialPageRoute(builder:(context)=> const Accion()
+                  )
+                );
+              },),
+              ListTile(leading:const Icon(Icons.science),title:const Text('Ciencia Ficción'),
+              onTap:(){
+                Navigator.of(context).push(
+                  MaterialPageRoute(builder:(context)=> const CienciaFiccion()
                   )
                 );
               },)

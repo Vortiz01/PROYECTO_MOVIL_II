@@ -18,12 +18,13 @@ class _HomePageState extends State<HomePage>{
       drawer: const SideMenu(),
 
         appBar: AppBar(
+            backgroundColor: Color.fromRGBO(27 , 1, 97, 38),
             title: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-            Icon(Icons.shop),
+            Icon(Icons.menu_book_sharp),
             SizedBox(width:10),
-            Text('Anime Shop'),
+            Text('Catálago de Animes'),
             ],
           
         ),
