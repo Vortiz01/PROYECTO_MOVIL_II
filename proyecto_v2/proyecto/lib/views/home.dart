@@ -29,13 +29,7 @@ class _HomePageState extends State<HomePage>{
           
         ),
       ),
-      body:
-       RecipeCard(
-          title: 'Naruto',
-          rating: '4.9',
-          precio: '15',
-          thumbnailUrl:'https://drive.google.com/uc?export=view&id=1wWiAx-SqVHnwTvpkvY0-ebOq7PjdPkJh',
-      )
+      body: const RecipeCard()
 
     );
   }
